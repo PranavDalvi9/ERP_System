@@ -42,7 +42,7 @@ const Evevts = () => {
           <td>{e.eventInfo}</td>
           <td>{e.start}</td>
           <td>{e.end}</td>
-          <td>{e.reglink}</td>
+          <td><a href={e.reglink}>Link</a></td>
         </tr>
   ))
 }

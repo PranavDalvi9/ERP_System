@@ -1,0 +1,29 @@
+{
+  "student": [],
+  "events": [
+    {
+      "eventName": "Anu",
+      "eventInfo": "rajau is choclate",
+      "start": "2022-06-08",
+      "end": "2022-06-10",
+      "reglink": "anu.raju.incom",
+      "id": 3
+    },
+    {
+      "eventName": "ajit",
+      "eventInfo": "ajit sir",
+      "start": "2022-06-08",
+      "end": "2022-06-10",
+      "reglink": "sakt",
+      "id": 4
+    },
+    {
+      "eventName": "pranav",
+      "eventInfo": "dsa drop",
+      "start": "2022-06-08",
+      "end": "2022-06-10",
+      "reglink": "redux week",
+      "id": 5
+    }
+  ]
+}
