@@ -9,18 +9,20 @@ const StudentInfo = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
   const userData = useSelector((store) => store.loginUserData.userData[0])
-  console.log("userdata ta" , userData[0])
+  console.log("userdata ta" , userData)
 
 const handleLogout = () => {
   dispatch(logout())
-  // navigate("/login")
+  navigate("/login")
 }
 
   return (
     <div>
-      <p>info student</p>
+      {/* <p>info student</p> */}
 
-      <p>Name : {userData[0].name} </p>
+      {
+        userData !== undefined ? <>
+        <p>Name : {userData[0].name} </p>
       <p>Department : {userData[0].department}</p>
       <p>Academic Year : {userData[0].academic}</p>
       <p>Email : {userData[0].email}</p>
@@ -29,6 +31,10 @@ const handleLogout = () => {
       <p>Fees paid : {userData[0].fees}</p>
 
       <button onClick={() => handleLogout()}>Logout</button>
+        </> : <p>No Data Available</p>
+      }
+
+      
 
     </div>
   )
