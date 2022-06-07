@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import axios from "axios"
 
 const Login = () => {
 
     const [userName, setUserName] = useState("")
     const[password , setPassword] = useState("")
+    const[userData , setUserData] = useState([])
 
     const handleAdd = () => {
         const data = {
@@ -12,6 +14,20 @@ const Login = () => {
         }
 
         console.log("data" , data)
+
+        axios.get("http://localhost:8080/student")
+        // .then((res) => { setUserData(res.data)
+
+        //   // const neww = res.data.filter((e) => e.email)
+        // const newArr = userData.filter((e) => e.email  === userName)
+        //   console.log("eee",newArr)
+        // })
+        .then((res) => {
+          const newArr = res.data.filter((e) => e.email ===userName )
+          console.log("eee" , newArr)
+        }
+        )
+        
     }
   return (
     <div>
