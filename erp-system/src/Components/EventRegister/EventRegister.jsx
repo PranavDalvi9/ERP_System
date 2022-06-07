@@ -19,7 +19,7 @@ const EventRegister = () => {
             reglink
         }
         console.log('dara' , data)
-        axios.post("http://localhost:8080/events" , data).then((res) => console.log(res)).catch((err) => console.log(err))
+        axios.post("http://localhost:8080/events" , data).then((res) => console.log(res)).catch((err) => {alert("Event Added Successfully")}).catch((err) => alert("Cannot register"))
     }
 
     
