@@ -1,17 +1,17 @@
 {
   "student": [
     {
-      "name": "Pranav Dalvi",
-      "department": "EXTC",
-      "academic_year": "2022",
-      "phone": "9920001121",
-      "fees": "1,20,000",
-      "fees_paid": "yes",
-      "email": "pranav@gmail.com",
-      "password": "12345"
+      "name": "asda",
+      "department": "ads",
+      "academic": "da",
+      "phone": "ad",
+      "fees": "da",
+      "role": "Student",
+      "email": "sadda",
+      "password": "12345",
+      "id": 1
     }
   ],
-
   "events": [
     {
       "eventName": "Anu",

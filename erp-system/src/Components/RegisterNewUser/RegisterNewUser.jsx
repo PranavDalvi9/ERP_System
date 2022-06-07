@@ -17,9 +17,11 @@ export default function RegisterNewUser() {
             academic,
             phone,
             fees,
+            role:"Student",
             email,
             password : "12345"
         }
+        console.log(data)
 
         axios.post("http://localhost:8080/student", data).then((res) => console.log(res.data))
     }
@@ -28,12 +30,12 @@ export default function RegisterNewUser() {
     <div>
       <h1>Create new user</h1>
 
-      <input type="text" placeholder='enter name'  />
-      <input type="text" placeholder='enter department'  />
-      <input type="text" placeholder='enter academic year'  />
-      <input type="text" placeholder='enter phone'  />
-      <input type="text" placeholder='enter fees'  />
-      <input type="text" placeholder='enter email'  />
+      <input type="text" onChange={(e) =>  setName(e.target.value)} placeholder='enter name'  /> <br /><br />
+      <input type="text" onChange={(e) =>  setDepartment(e.target.value)} placeholder='enter department'  /><br /><br />
+      <input type="text" onChange={(e) =>  setAcademic(e.target.value)} placeholder='enter academic year'  /><br /><br />
+      <input type="text" onChange={(e) =>  setPhone(e.target.value)} placeholder='enter phone'  /><br /><br />
+      <input type="text" onChange={(e) =>  setFees(e.target.value)} placeholder='enter fees'  /><br /><br />
+      <input type="text" onChange={(e) =>  setEmail(e.target.value)} placeholder='enter email'  /><br /><br />
       {/* <input type="text" placeholder='enter '  /> */}
 
       <button onClick={() => handleAdd()}>ADD</button>
