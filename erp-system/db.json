@@ -10,6 +10,17 @@
       "email": "sadda",
       "password": "12345",
       "id": 1
+    },
+    {
+      "name": "Raja",
+      "department": "COMS",
+      "academic": "2022",
+      "phone": "12313213",
+      "fees": "12332",
+      "role": "Student",
+      "email": "raj@erp.com",
+      "password": "12345",
+      "id": 2
     }
   ],
   "events": [
