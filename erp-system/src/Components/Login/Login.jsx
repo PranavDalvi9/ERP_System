@@ -23,8 +23,19 @@ const Login = () => {
         //   console.log("eee",newArr)
         // })
         .then((res) => {
-          const newArr = res.data.filter((e) => (e.email ===userName && e.password === password) )
-          console.log("eee" , newArr)
+          const newArr = res.data.filter((e) => {
+            if(e.email ===userName && e.password === password){
+              return e
+            }
+          } )
+
+          if(newArr.length){
+            console.log("eee" , newArr.length)
+          }
+          else{
+            alert("no")
+          }
+          
         }
         )
         

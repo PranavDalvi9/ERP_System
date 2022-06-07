@@ -5,6 +5,7 @@ import Login from './Components/Login/Login';
 import StudentPortal from './Components/StudentPortal/StudentPortal';
 import EventRegister from './Components/EventRegister/EventRegister';
 import { Route, Routes } from 'react-router';
+import RegisterNewUser from './Components/RegisterNewUser/RegisterNewUser';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       {/* <StudentPortal/> */}
 
       {/* <EventRegister/> */}
+{/* <RegisterNewUser/> */}
 
       <Routes>
 
@@ -26,6 +28,8 @@ function App() {
       <Route path='/' element={<StudentPortal/>}/>
 
         <Route path='/event_register' element={<EventRegister/>}/>
+
+        <Route path='/register_student' element={<RegisterNewUser/>} />
 
 
       </Routes>
