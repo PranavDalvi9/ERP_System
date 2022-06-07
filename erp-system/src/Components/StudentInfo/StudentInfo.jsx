@@ -1,14 +1,19 @@
 import React from 'react'
 import axios from "axios"
-import { useSelector } from 'react-redux'
+import {useDispatch , useSelector} from "react-redux"
+import { logout } from '../../Redux/Login/Action'
+import {useNavigate} from "react-router-dom"
+
 
 const StudentInfo = () => {
-
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
   const userData = useSelector((store) => store.loginUserData.userData[0])
   console.log("userdata ta" , userData[0])
 
 const handleLogout = () => {
-  
+  dispatch(logout())
+  // navigate("/login")
 }
 
   return (
