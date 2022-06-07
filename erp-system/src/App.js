@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 const PrivateRoute = ({ isAuthenticate, children }) => {
   return isAuthenticate ? children : <Navigate to={"/login"} />;
 };
-
+ 
 function App() {
   // const navigate = useNavigate()
   const isAuthenticate = useSelector(
@@ -36,8 +36,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* <Route path='/' element={<StudentPortal/>}/> */}
-{/* 
-        <Route path="/event_register" element={<EventRegister />} />
+
+        {/* <Route path="/event_register" element={<EventRegister />} />
 
         <Route path="/register_student" element={<RegisterNewUser />} /> */}
 
@@ -67,6 +67,8 @@ function App() {
             </PrivateRoute>
           }
         ></Route>
+
+        
       </Routes>
     </div>
   );

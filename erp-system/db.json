@@ -1,26 +1,43 @@
 {
   "student": [
     {
-      "name": "asda",
-      "department": "ads",
-      "academic": "da",
-      "phone": "ad",
-      "fees": "da",
+      "name": "Pranav",
+      "department": "EXTC",
+      "academic": "2022",
+      "phone": "12313213",
+      "fees": "21312",
       "role": "Student",
-      "email": "sadda",
+      "email": "p@e.com",
+      "roll": "22",
+      "term": "Second Sem",
       "password": "12345",
       "id": 1
     },
     {
-      "name": "Raja",
+      "name": "Champ",
       "department": "COMS",
       "academic": "2022",
-      "phone": "12313213",
-      "fees": "12332",
+      "phone": "2342424",
+      "fees": "21312",
       "role": "Student",
-      "email": "raj@erp.com",
+      "email": "champ@e.com",
+      "roll": "66",
+      "term": "Third Sem",
       "password": "12345",
       "id": 2
+    },
+    {
+      "name": "Ajit",
+      "department": "ERP ADMIN",
+      "academic": "2022",
+      "phone": "2321213",
+      "fees": "0",
+      "role": "Admin",
+      "email": "p@admin.com",
+      "roll": "67",
+      "term": "na",
+      "password": "12345",
+      "id": 3
     }
   ],
   "events": [

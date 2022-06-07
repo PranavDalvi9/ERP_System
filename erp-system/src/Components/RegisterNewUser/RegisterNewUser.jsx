@@ -10,6 +10,9 @@ export default function RegisterNewUser() {
     const[fees , setFees] = useState("")
     const[email , setEmail] = useState("")
 
+    const[roll , setRoll] = useState("")
+    const[term , setTerm] = useState("")
+
     const handleAdd = () => {
         const data = {
             name,
@@ -19,6 +22,8 @@ export default function RegisterNewUser() {
             fees,
             role:"Student",
             email,
+            roll,
+            term,
             password : "12345"
         }
         console.log(data)
@@ -36,6 +41,9 @@ export default function RegisterNewUser() {
       <input type="text" onChange={(e) =>  setPhone(e.target.value)} placeholder='enter phone'  /><br /><br />
       <input type="text" onChange={(e) =>  setFees(e.target.value)} placeholder='enter fees'  /><br /><br />
       <input type="text" onChange={(e) =>  setEmail(e.target.value)} placeholder='enter email'  /><br /><br />
+      
+      <input type="text" onChange={(e) => setRoll(e.target.value)} placeholder="roll number" /> <br /><br />
+      <input type="text" onChange={(e) => setTerm(e.target.value)} placeholder="term" /> <br /><br />
       {/* <input type="text" placeholder='enter '  /> */}
 
       <button onClick={() => handleAdd()}>ADD</button>
