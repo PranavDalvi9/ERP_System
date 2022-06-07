@@ -23,7 +23,7 @@ const Login = () => {
         //   console.log("eee",newArr)
         // })
         .then((res) => {
-          const newArr = res.data.filter((e) => e.email ===userName )
+          const newArr = res.data.filter((e) => (e.email ===userName && e.password === password) )
           console.log("eee" , newArr)
         }
         )
