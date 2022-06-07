@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import {useDispatch , useSelector} from "react-redux"
+import {useNavigate} from "react-router-dom"
 import axios from "axios"
+import { loginSuccess } from '../../Redux/Login/Action';
 
 const Login = () => {
-
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
     const [userName, setUserName] = useState("")
     const[password , setPassword] = useState("")
     const[userData , setUserData] = useState([])
@@ -16,12 +20,6 @@ const Login = () => {
         console.log("data" , data)
 
         axios.get("http://localhost:8080/student")
-        // .then((res) => { setUserData(res.data)
-
-        //   // const neww = res.data.filter((e) => e.email)
-        // const newArr = userData.filter((e) => e.email  === userName)
-        //   console.log("eee",newArr)
-        // })
         .then((res) => {
           const newArr = res.data.filter((e) => {
             if(e.email ===userName && e.password === password){
@@ -30,7 +28,9 @@ const Login = () => {
           } )
 
           if(newArr.length){
-            console.log("eee" , newArr.length)
+            dispatch(loginSuccess(newArr))
+            navigate("/")
+            console.log("eee" , newArr)
           }
           else{
             alert("no")
