@@ -15,7 +15,7 @@ const Evevts = () => {
   return (
     <div>
       {/* <p>enemts</p> */}
-      <p onClick={() => navigate("/event_register")}>Register Event</p>
+      {/* <p onClick={() => navigate("/event_register")}>Register Event</p> */}
 
       <table>
         {/* <tr>

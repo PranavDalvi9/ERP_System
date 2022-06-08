@@ -41,3 +41,35 @@
     padding-top: 5%;
     padding-bottom: 5%; 
 }
+.AdminDivButtons{
+    /* border: 2px solid black; */
+    padding-bottom: 1%;
+}
+
+.AdminDivButtons>button{
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    background-color: #B3E8E5;
+    color: #2F8F9D;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 3%;
+}
+
+.registerEvent{
+    /* border: 2px solid red; */
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.registerEvent>button{
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    background-color: #B3E8E5;
+    color: #2F8F9D;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 3%;
+}

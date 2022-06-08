@@ -1,4 +1,5 @@
 import React from 'react'
+import "./StudentInfo.css"
 import axios from "axios"
 import {useDispatch , useSelector} from "react-redux"
 import { logout } from '../../Redux/Login/Action'

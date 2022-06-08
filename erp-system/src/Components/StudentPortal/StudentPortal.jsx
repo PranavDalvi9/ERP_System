@@ -39,17 +39,20 @@ const StudentPortal = () => {
             <div className='StudentHeading'><p>Hello Admin {userData.name}</p></div>
 
             <div className='AdminDiv'>
+              <div className='AdminDivButtons'>
               <button onClick={() => navigate("/register_student")} >Add Student</button>
               <button onClick={() => navigate("/event_register")} >Add Event</button>
               <button onClick={() => {
                 dispatch(logout());
                 navigate("/login")
               }}>Logout</button>
+              </div>
 
 
               <div className='StudentList'>
                 <ListStudents />
               </div>
+              <div className='registerEvent'><button onClick={() => navigate("/event_register")}>Register Event</button></div>
               <div>
                 <Evevts />
               </div>
