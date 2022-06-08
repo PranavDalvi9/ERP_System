@@ -1,13 +1,29 @@
+
+
+.StudentHeading{
+    padding: 0.1%;
+    background-color: #2F8F9D;
+}
+.StudentHeading>p{
+    color: #3C2C3E;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 .StudentPortal{
     display: flex;
+    padding-top: 5%;
     /* border: 2px solid red; */
     /* height: 100px; */
     width: 100%;
+    /* align-content: flex-start !important; */
 }
 
 .StudentInfo{
     border: 2px solid black;
     width: 35%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .Events{
@@ -18,4 +34,10 @@
 .StudentList{
     /* border: 2px solid red; */
     width: 100%;
+}
+
+.AdminDiv{
+    border: 2px solid red;
+    padding-top: 5%;
+    padding-bottom: 5%; 
 }

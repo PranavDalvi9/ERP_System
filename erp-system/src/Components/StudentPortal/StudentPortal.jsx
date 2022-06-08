@@ -19,10 +19,11 @@ const StudentPortal = () => {
   console.log("login stst", userData)
 
   return (
-    <div>
+    <div className='StudentPortalMain'>
 
       {
         userData.role === "Student" ? <>
+          <div className='StudentHeading'><p>Student Login</p></div>
           <div className='StudentPortal'>
             <div className='StudentInfo'>Student Information <StudentInfo /> </div>
             <div className='Events'><Evevts /> </div>
@@ -34,21 +35,24 @@ const StudentPortal = () => {
       {
         userData.role === "Admin" ? <>
           <div>
-            <h1>Hello Admin {userData.name}  </h1>
+            {/* <h1>Hello Admin {userData.name}  </h1> */}
+            <div className='StudentHeading'><p>Hello Admin {userData.name}</p></div>
 
-            <button onClick={() => navigate("/register_student")} >Add Student</button>
-            <button onClick={() => navigate("/event_register")} >Add Event</button>
-            <button onClick={() => {
-              dispatch(logout());
-              navigate("/login")
-            }}>Logout</button>
+            <div className='AdminDiv'>
+              <button onClick={() => navigate("/register_student")} >Add Student</button>
+              <button onClick={() => navigate("/event_register")} >Add Event</button>
+              <button onClick={() => {
+                dispatch(logout());
+                navigate("/login")
+              }}>Logout</button>
 
 
-            <div className='StudentList'>
-              <ListStudents />
-            </div>
-            <div>
-              <Evevts />
+              <div className='StudentList'>
+                <ListStudents />
+              </div>
+              <div>
+                <Evevts />
+              </div>
             </div>
           </div>
         </> : <></>
