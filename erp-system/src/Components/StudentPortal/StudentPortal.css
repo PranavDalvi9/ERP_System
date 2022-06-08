@@ -37,13 +37,13 @@
 }
 
 .AdminDiv{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     padding-top: 5%;
     padding-bottom: 5%; 
 }
 .AdminDivButtons{
     /* border: 2px solid black; */
-    padding-bottom: 3%;
+    /* padding-bottom: 3%; */
 }
 
 .AdminDivButtons>button{
@@ -59,17 +59,10 @@
 
 .registerEvent{
     /* border: 2px solid red; */
-    padding-top: 4%;
-    padding-bottom: 1%;
+    /* padding-top: 6%;
+    padding-bottom: 2%; */
 }
-
-.registerEvent>button{
-    padding: 1%;
-    border-radius: 20px;
-    border: none;
-    background-color: #3BACB6;
-    color: #B3E8E5;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-right: 3%;
+.registerEvent>p{
+    color: black;
+    font-size: 35px;
 }

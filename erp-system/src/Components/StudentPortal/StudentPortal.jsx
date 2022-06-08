@@ -48,11 +48,11 @@ const StudentPortal = () => {
               }}>Logout</button>
               </div>
 
-
+              <div className='registerEvent'><p>Student Data</p></div>
               <div className='StudentList'>
                 <ListStudents />
               </div>
-              <div className='registerEvent'><button onClick={() => navigate("/event_register")}>Register Event</button></div>
+              <div className='registerEvent'><p>Events Data</p></div>
               <div>
                 <Evevts />
               </div>
