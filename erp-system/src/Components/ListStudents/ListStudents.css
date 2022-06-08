@@ -1,6 +1,58 @@
-table, th, td {
+/* table, th, td {
     border: 1px solid;
     width: auto;
     margin: auto;
+  } */
+
+
+  /* table {
+    border-collapse: collapse;
+    width: 90%;
+    border: none;
   }
   
+  th, td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: coral;} */
+  
+
+
+   table {
+    border-collapse: collapse;
+    width: 90%;
+    border: none;
+  }
+  
+  th, td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+    width: auto;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #2F8F9D;
+    color: #B3E8E5;
+  } 
+
+  td>input{
+    /* border: 2px solid red; */
+    background-color: #B3E8E5;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  td>select{
+    background-color: #B3E8E5;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
