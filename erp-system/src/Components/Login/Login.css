@@ -1,0 +1,33 @@
+.LoginHeading{
+    /* border: 2px solid red; */
+    padding: 0.1%;
+    background-color: #2F8F9D;
+}
+
+.LoginHeading>p{
+    color: #3C2C3E;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.LoginDiv{
+    /* border: 2px solid red; */
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.LoginDiv>input{
+    padding: 1%;
+    border-radius: 20px;
+    border: 1px solid #2F8F9D;
+}
+
+.LoginDiv>button{
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    background-color: #B3E8E5;
+    color: #2F8F9D;
+    padding-right: 30px;
+    padding-left: 30px;
+}

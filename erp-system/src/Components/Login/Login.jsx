@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Login.css"
 import {useDispatch , useSelector} from "react-redux"
 import {useNavigate} from "react-router-dom"
 import axios from "axios"
@@ -42,11 +43,13 @@ const Login = () => {
     }
   return (
     <div>
-      <p>Login</p>
+      <div className='LoginHeading'><p>Login</p></div>
       
+      <div className='LoginDiv'>
       <input type="text" placeholder='UserName' onChange={(e) => setUserName(e.target.value)}/> <br /><br />
       <input type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)}/> <br /><br />
       <button onClick={() => handleAdd()}>Login</button>
+      </div>
     </div>
   )
 }

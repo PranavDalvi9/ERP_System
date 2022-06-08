@@ -4,7 +4,7 @@ import StudentInfo from "../StudentInfo/StudentInfo"
 import Evevts from '../Evevts/Evevts'
 import ListStudents from '../ListStudents/ListStudents'
 import { useNavigate } from 'react-router-dom'
-import {useDispatch , useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { logout } from '../../Redux/Login/Action'
 
 
@@ -12,8 +12,8 @@ import { logout } from '../../Redux/Login/Action'
 
 const StudentPortal = () => {
 
-const navigate = useNavigate();
-const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const userData = useSelector((store) => store.loginUserData.userData[0][0])
   console.log("login stst", userData)
@@ -34,12 +34,14 @@ const dispatch = useDispatch();
       {
         userData.role === "Admin" ? <>
           <div>
-            <h1>Hello Admin { userData.name}  </h1>
-            
-            <button onClick={()=> navigate("/register_student") } >Add Student</button>
-            <button onClick={()=> navigate("/event_register") } >Add Event</button>
-            <button onClick={() => {  dispatch(logout());
-  navigate("/login")}}>Logout</button>
+            <h1>Hello Admin {userData.name}  </h1>
+
+            <button onClick={() => navigate("/register_student")} >Add Student</button>
+            <button onClick={() => navigate("/event_register")} >Add Event</button>
+            <button onClick={() => {
+              dispatch(logout());
+              navigate("/login")
+            }}>Logout</button>
 
 
             <div className='StudentList'>
