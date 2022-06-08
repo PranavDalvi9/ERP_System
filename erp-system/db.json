@@ -38,6 +38,19 @@
       "term": "na",
       "password": "12345",
       "id": 3
+    },
+    {
+      "name": "name",
+      "department": "dep",
+      "academic": "444",
+      "phone": "5657657567",
+      "fees": "12345",
+      "role": "Student",
+      "email": "g655675",
+      "roll": "11",
+      "term": "Second Year",
+      "password": "12345",
+      "id": 4
     }
   ],
   "events": [

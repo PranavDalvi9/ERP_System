@@ -13,6 +13,8 @@ export default function ListStudents() {
     const [name1, setName1] = useState("")
     const [roll1, setRoll1] = useState("")
     const [contact1, setContact1] = useState("")
+    const[term , setTerm] = useState("")
+    const[year, setYear] = useState("")
 
     useEffect(() => {
         dataget()
@@ -33,6 +35,13 @@ export default function ListStudents() {
         cotactSearch()
     }, [contact1])
 
+    useEffect(() => {
+        termFilter()
+    },[term])
+    useEffect(() => {
+        yearFilter()
+    },[year])
+
 
     function nameSearch() {
         var filterData22 = name1.length === 0 ? dataappend : data.filter((e) => e.name.toLowerCase().includes(name1.toLowerCase()))
@@ -50,6 +59,16 @@ export default function ListStudents() {
         setData(filterData22)
     }
 
+    function termFilter(){
+        var filterData22 = term.length === 0 ? dataappend : data.filter((e) => e.term === term)
+        setData(filterData22)
+    }
+
+    function yearFilter(){
+        var filterData22 = year.length === 0 ? dataappend : data.filter((e) => e.academic === year)
+        setData(filterData22)
+    }
+
 
     return (
         <div>
@@ -59,8 +78,23 @@ export default function ListStudents() {
                     <tr>
                         <td><input type="text" onChange={(e) => setName1(e.target.value)} placeholder='Name' /></td>
                         <td><input type="text" value={roll1} onChange={(e) => setRoll1(e.target.value)} placeholder='Roll no' /></td>
-                        <td><input type="text" placeholder='Term' /></td>
-                        <td><input type="text" placeholder='Year' /></td>
+                        <td>
+                            <select name="" id="" onClick={(e) => setTerm(e.target.value)}>
+                                <option value="">---</option>
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
+                                <option value="Fourth Year">Fourth Year</option>
+                            </select>
+                        </td>
+                        <td>
+                        <select name="" id="" onClick={(e) => setYear(e.target.value)}>
+                                <option value="">---</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>    
+                        </td>
                         <td><input type="text" value={contact1} onChange={(e) => setContact1(e.target.value)} placeholder='Contact' /></td>
 
                     </tr>

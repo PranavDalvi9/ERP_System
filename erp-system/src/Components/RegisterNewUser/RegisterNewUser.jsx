@@ -42,8 +42,18 @@ export default function RegisterNewUser() {
       <input type="text" value={fees} onChange={(e) =>  setFees(e.target.value)} placeholder='enter fees'  /><br /><br />
       <input type="text" value={email} onChange={(e) =>  setEmail(e.target.value)} placeholder='enter email'  /><br /><br />
       
+
+      <select name="" id="" onClick={(e)=> setTerm(e.target.value)}>
+        <option value="">---</option>
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+        <option value="Fourth Year">Fourth Year</option>
+      </select><br /><br />
+
+
       <input type="text" value={roll} onChange={(e) => setRoll(e.target.value)} placeholder="roll number" /> <br /><br />
-      <input type="text" value={term} onChange={(e) => setTerm(e.target.value)} placeholder="term" /> <br /><br />
+      {/* <input type="text" value={term} onChange={(e) => setTerm(e.target.value)} placeholder="term" /> <br /><br /> */}
       {/* <input type="text" placeholder='enter '  /> */}
 
       <button onClick={() => handleAdd()}>ADD</button>
