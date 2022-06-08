@@ -10,7 +10,7 @@ const initState = {
 };
 
 export const loginReducer = (store = initState, { type, payload }) => {
-    console.log("logincccc" , store)
+    // console.log("logincccc" , store)
     switch (type) {
         case LOGIN_LOADING:
             return { ...store, loading: true };
