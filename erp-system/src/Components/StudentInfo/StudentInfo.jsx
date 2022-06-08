@@ -31,7 +31,7 @@ const handleLogout = () => {
       
       <p>Fees paid : {userData[0].fees}</p>
 
-      <button onClick={() => handleLogout()}>Logout</button>
+      <button className='ButtonLogout' onClick={() => handleLogout()}>Logout</button>
         </> : <p>No Data Available</p>
       }
 

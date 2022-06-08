@@ -1,0 +1,14 @@
+.ButtonLogout{
+    /* border: 2px solid red; */
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    background-color: #B3E8E5;
+    color: #2F8F9D;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+}
