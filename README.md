@@ -46,3 +46,7 @@ Users/Admin can Login from this page.
 As admin login he can see this dashboard
 <img width="933" alt="image" src="https://user-images.githubusercontent.com/96105012/172791642-c565a23d-5916-4261-ac7a-55f00beec368.png">
 
+## Student Login Dashboard
+As student login he can see this dashboard
+<img width="937" alt="image" src="https://user-images.githubusercontent.com/96105012/172791896-28b1f345-1b0e-4969-944c-d8b784407d4c.png">
+
