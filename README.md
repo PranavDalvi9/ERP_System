@@ -42,3 +42,7 @@ Took some help from these resources
 Users/Admin can Login from this page.
 <img width="928" alt="image" src="https://user-images.githubusercontent.com/96105012/172790378-28818741-8cc3-4ea6-badf-6104621f9ba6.png">
 
+## Admin Login Dashboard
+As admin login he can see this dashboard
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/96105012/172791642-c565a23d-5916-4261-ac7a-55f00beec368.png">
+
