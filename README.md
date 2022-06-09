@@ -10,3 +10,11 @@
 2. Only Admin can add students to erp system and admin can also add events.
 3. Admin can search data of student by name, roll number, contact.
 4. Admin can also filter out the data by term and year.
+
+
+# Technologies that we used :-
+1. REACT
+2. CSS
+3. Node.js
+4. Express.js
+5. MongoDB
