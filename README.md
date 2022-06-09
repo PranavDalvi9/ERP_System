@@ -51,11 +51,15 @@ As student login he can see this dashboard
 <img width="937" alt="image" src="https://user-images.githubusercontent.com/96105012/172791896-28b1f345-1b0e-4969-944c-d8b784407d4c.png">
 
 ### Admin Credential
+
 User-name : pranav@admin.com
+
 Password : 12345
 
 ### Student Credential
+
 User-name : abhishek@erp.com
+
 Password : 12345
 
 
