@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Admin from "./Components/Admin/Admin";
+// import Admin from "./Components/Admin/Admin";
 import Login from "./Components/Login/Login";
 import StudentPortal from "./Components/StudentPortal/StudentPortal";
 import EventRegister from "./Components/EventRegister/EventRegister";

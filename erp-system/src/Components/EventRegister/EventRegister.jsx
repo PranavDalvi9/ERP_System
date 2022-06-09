@@ -19,7 +19,7 @@ const EventRegister = () => {
             reglink
         }
         console.log('dara' , data)
-        axios.post("http://localhost:8080/events" , data).then((res) => console.log(res)).catch((err) => {alert("Event Added Successfully")}).catch((err) => alert("Cannot register"))
+        axios.post("https://erp-pranav-dalvi.herokuapp.com/events" , data).then((res) => console.log(res)).catch((err) => {alert("Event Added Successfully")}).catch((err) => alert("Cannot register"))
     }
 
     

@@ -20,7 +20,7 @@ const Login = () => {
 
         console.log("data" , data)
 
-        axios.get("http://localhost:8080/student")
+        axios.get("https://erp-pranav-dalvi.herokuapp.com/student")
         .then((res) => {
           const newArr = res.data.filter((e) => {
             if(e.email ===userName && e.password === password){

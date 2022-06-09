@@ -9,7 +9,7 @@ const Evevts = () => {
   console.log(data)
 
   useEffect(() => {
-    axios.get("http://localhost:8080/events").then((res) => setData(res.data)).catch((err) => console.log(err))
+    axios.get("https://erp-pranav-dalvi.herokuapp.com/events").then((res) => setData(res.data)).catch((err) => console.log(err))
   }, [])
 
   return (

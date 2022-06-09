@@ -21,7 +21,7 @@ export default function ListStudents() {
     }, [])
 
     function dataget() {
-        axios.get("http://localhost:8080/student").then((res) => { setData(res.data); setDataappend(res.data) })
+        axios.get("https://erp-pranav-dalvi.herokuapp.com/student").then((res) => { setData(res.data); setDataappend(res.data) })
     }
 
     useEffect(() => {

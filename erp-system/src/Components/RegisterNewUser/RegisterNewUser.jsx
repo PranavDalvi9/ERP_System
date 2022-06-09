@@ -28,7 +28,7 @@ export default function RegisterNewUser() {
         }
         console.log(data)
 
-        axios.post("http://localhost:8080/student", data).then((res) => {alert("User Added Successfully") }).catch((err) => alert("Cannot register"))
+        axios.post("https://erp-pranav-dalvi.herokuapp.com/student", data).then((res) => {alert("User Added Successfully") }).catch((err) => alert("Cannot register"))
     }
 
   return (
