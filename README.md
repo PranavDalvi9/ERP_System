@@ -33,3 +33,12 @@ Project Deployed Link - [Project Deployed Link](https://erp-system-k7bfysopv-pra
 Took some help from these resources 
 1) [W3 Schools](https://www.w3schools.com)
 2) [MDN docs](https://developer.mozilla.org/en-US/)
+
+
+# Glimpse of Our Work:-
+
+
+## User Login Page
+Users/Admin can Login from this page.
+<img width="928" alt="image" src="https://user-images.githubusercontent.com/96105012/172790378-28818741-8cc3-4ea6-badf-6104621f9ba6.png">
+
