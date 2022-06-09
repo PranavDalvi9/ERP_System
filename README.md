@@ -18,3 +18,18 @@
 3. Node.js
 4. Express.js
 5. MongoDB
+
+
+## Contact
+
+Pranav Dalvi - [My Linkedin](https://www.linkedin.com/in/pranavsanjaydalvi/)
+
+Project Link - [Project Repo](https://github.com/PranavDalvi9/ERP_System)
+
+Project Deployed Link - [Project Deployed Link](https://erp-system-k7bfysopv-pranavdalvi9.vercel.app/login)
+
+
+## Acknowledgment
+Took some help from these resources 
+1) [W3 Schools](https://www.w3schools.com)
+2) [MDN docs](https://developer.mozilla.org/en-US/)
